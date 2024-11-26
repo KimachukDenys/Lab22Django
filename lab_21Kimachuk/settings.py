@@ -75,8 +75,12 @@ WSGI_APPLICATION = 'lab_21Kimachuk.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'labdjangotest',  # ім'я вашої бази даних
+        'USER': 'djangoadmin',   # ваш користувач PostgreSQL
+        'PASSWORD': 'postgresql',  # ваш пароль для PostgreSQL
+        'HOST': 'localhost',      # або IP-адреса сервера PostgreSQL
+        'PORT': '5432',           # стандартний порт для PostgreSQL
     }
 }
 
